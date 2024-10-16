@@ -77,19 +77,19 @@ Here’s how you can set up a Hardhat project:
 
 2. **Write a Test for the Smart Contract** in the `test` directory:
    ```javascript
-   // test/SimpleStorage.js
    const { expect } = require("chai");
 
-   describe("SimpleStorage", function () {
-       it("Should return the new stored value once it's set", async function () {
-           const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
-           const simpleStorage = await SimpleStorage.deploy();
-           await simpleStorage.deployed();
+describe("SimpleStorage", function () {
+    it("Should return the new stored value once it's set", async function () {
+        const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
+        const simpleStorage = await SimpleStorage.deploy();
+        // No need to await deployed() because deploy() already deploys it.
 
-           await simpleStorage.set(42);
-           expect(await simpleStorage.get()).to.equal(42);
-       });
-   });
+        await simpleStorage.set(42);
+        expect(await simpleStorage.get()).to.equal(42);
+    });
+});
+
    ```
 
 3. **Run the Test**:
