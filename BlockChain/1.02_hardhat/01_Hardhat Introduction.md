@@ -103,21 +103,26 @@ Here’s how you can set up a Hardhat project:
    ```javascript
    // scripts/deploy.js
    async function main() {
-       const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
-       const simpleStorage = await SimpleStorage.deploy();
-       await simpleStorage.deployed();
-       console.log("SimpleStorage deployed to:", simpleStorage.address);
+    const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
+    const simpleStorage = await SimpleStorage.deploy();
+    
+    console.log("SimpleStorage deployed to:", simpleStorage.address);
    }
 
    main()
-       .then(() => process.exit(0))
-       .catch((error) => {
-           console.error(error);
-           process.exit(1);
-       });
+    .then(() => process.exit(0))
+    .catch((error) => {
+        console.error(error);
+        process.exit(1);
+    });
+
+   ```
+2. **Start a Local Hardhat Node**: Run the following command to start the local Hardhat node
+   ```bash
+   npx hardhat node
    ```
 
-2. **Run the Deployment Script**:
+3. **Run the Deployment Script**:
    ```bash
    npx hardhat run scripts/deploy.js --network localhost
    ```
