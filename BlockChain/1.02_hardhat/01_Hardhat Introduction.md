@@ -79,7 +79,7 @@ Here’s how you can set up a Hardhat project:
    ```javascript
    const { expect } = require("chai");
 
-describe("SimpleStorage", function () {
+   describe("SimpleStorage", function () {
     it("Should return the new stored value once it's set", async function () {
         const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
         const simpleStorage = await SimpleStorage.deploy();
@@ -88,7 +88,7 @@ describe("SimpleStorage", function () {
         await simpleStorage.set(42);
         expect(await simpleStorage.get()).to.equal(42);
     });
-});
+   });
 
    ```
 
