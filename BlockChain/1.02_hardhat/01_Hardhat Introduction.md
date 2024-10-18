@@ -77,19 +77,19 @@ Here’s how you can set up a Hardhat project:
 
 2. **Write a Test for the Smart Contract** in the `test` directory:
    ```javascript
-   // test/SimpleStorage.js
    const { expect } = require("chai");
 
    describe("SimpleStorage", function () {
-       it("Should return the new stored value once it's set", async function () {
-           const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
-           const simpleStorage = await SimpleStorage.deploy();
-           await simpleStorage.deployed();
+    it("Should return the new stored value once it's set", async function () {
+        const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
+        const simpleStorage = await SimpleStorage.deploy();
+        // No need to await deployed() because deploy() already deploys it.
 
-           await simpleStorage.set(42);
-           expect(await simpleStorage.get()).to.equal(42);
-       });
+        await simpleStorage.set(42);
+        expect(await simpleStorage.get()).to.equal(42);
+    });
    });
+
    ```
 
 3. **Run the Test**:
@@ -103,21 +103,26 @@ Here’s how you can set up a Hardhat project:
    ```javascript
    // scripts/deploy.js
    async function main() {
-       const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
-       const simpleStorage = await SimpleStorage.deploy();
-       await simpleStorage.deployed();
-       console.log("SimpleStorage deployed to:", simpleStorage.address);
+    const SimpleStorage = await ethers.getContractFactory("SimpleStorage");
+    const simpleStorage = await SimpleStorage.deploy();
+    
+    console.log("SimpleStorage deployed to:", simpleStorage.address);
    }
 
    main()
-       .then(() => process.exit(0))
-       .catch((error) => {
-           console.error(error);
-           process.exit(1);
-       });
+    .then(() => process.exit(0))
+    .catch((error) => {
+        console.error(error);
+        process.exit(1);
+    });
+
+   ```
+2. **Start a Local Hardhat Node**: Run the following command to start the local Hardhat node
+   ```bash
+   npx hardhat node
    ```
 
-2. **Run the Deployment Script**:
+3. **Run the Deployment Script**:
    ```bash
    npx hardhat run scripts/deploy.js --network localhost
    ```
