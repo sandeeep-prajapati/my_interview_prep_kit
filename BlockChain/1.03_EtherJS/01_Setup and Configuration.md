@@ -55,6 +55,8 @@ To interact with the Ethereum blockchain, you need to connect to a provider. You
 
 ```javascript
 const provider = new ethers.providers.InfuraProvider("mainnet", "YOUR_INFURA_PROJECT_ID");
+//for localhost
+const provider = new ethers.providers.JsonRpcProvider("http://127.0.0.1:8545");
 ```
 
 ---
