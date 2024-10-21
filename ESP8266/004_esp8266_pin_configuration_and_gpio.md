@@ -18,20 +18,20 @@
 #### 4. **ESP8266 Pin Mapping for Arduino IDE (NodeMCU)**
 Here’s the mapping of ESP8266 GPIO pins to Arduino pin numbers for common development boards like **NodeMCU**:
 
-| Arduino Pin | GPIO Pin | Pin Function            |
-|-------------|----------|-------------------------|
-| 0           | GPIO16   | Used for deep sleep wake-up, not recommended for I2C or SPI |
-| 1           | GPIO5    | General-purpose I/O     |
-| 2           | GPIO4    | General-purpose I/O     |
-| 3           | GPIO0    | Used during boot mode selection, can be used for I/O |
-| 4           | GPIO2    | Used as a default UART1 Tx during boot, but available for I/O |
-| 5           | GPIO14   | Supports PWM, SPI, I2C  |
-| 6           | GPIO12   | General-purpose I/O     |
-| 7           | GPIO13   | General-purpose I/O     |
-| 8           | GPIO15   | Must be pulled LOW to boot, but can be used for I/O |
-| 9           | GPIO3    | Default UART Rx, but available for I/O |
-| 10          | GPIO1    | Default UART Tx, but available for I/O |
-| A0          | ADC0     | Analog input (voltage 0-1V) |
+| Arduino Pin | GPIO Pin | Pin Function                                            | ESP Code |
+|--------------|----------|--------------------------------------------------------|----------|
+| 0            | GPIO16   | Used for deep sleep wake-up, not recommended for I2C or SPI | D0       |
+| 1            | GPIO5    | General-purpose I/O                                    | D1       |
+| 2            | GPIO4    | General-purpose I/O                                    | D2       |
+| 3            | GPIO0    | Used during boot mode selection, can be used for I/O  | D3       |
+| 4            | GPIO2    | Used as a default UART1 Tx during boot, but available for I/O | D4       |
+| 5            | GPIO14   | Supports PWM, SPI, I2C                                 | D5       |
+| 6            | GPIO12   | General-purpose I/O                                    | D6       |
+| 7            | GPIO13   | General-purpose I/O                                    | D7       |
+| 8            | GPIO15   | Must be pulled LOW to boot, but can be used for I/O   | D8       |
+| 9            | GPIO3    | Default UART Rx, but available for I/O                 | D9       |
+| 10           | GPIO1    | Default UART Tx, but available for I/O                 | D10      |
+| A0           | ADC0     | Analog input (voltage 0-1V)                           | A0       |
   
 - **Note**: Some pins, such as GPIO0, GPIO2, and GPIO15, have specific functions during the boot process. They should be handled carefully when configuring them for input/output operations, especially if you're working with external hardware during the startup sequence.
 
