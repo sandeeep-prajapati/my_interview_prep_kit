@@ -9,7 +9,7 @@
 
 4. **04_table_creation.md**
    - What are the steps to create tables, and what are the data types available?
-
+   
 5. **05_insert_data.md**
    - How to insert data into tables and the best practices for doing so?
 
