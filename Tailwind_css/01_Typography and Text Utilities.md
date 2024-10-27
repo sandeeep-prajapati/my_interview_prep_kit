@@ -70,5 +70,3 @@ Tailwind CSS provides a comprehensive set of utilities for managing typography, 
      ```
 
 ---
-
-By mastering these utilities, you can easily control and adjust text styling across different components in your projects, ensuring a consistent and polished appearance.
