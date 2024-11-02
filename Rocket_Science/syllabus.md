@@ -178,8 +178,6 @@
     **File:** `45_interplanetary_travel_simulation.md`  
     Use simulation software to model
 
- a mission plan for traveling to another planet, analyzing the required trajectory and resources.
-
 46. **Explore the Ethics of Space Exploration**  
     **File:** `46_ethics_of_space_exploration.md`  
     Discuss the ethical considerations surrounding space exploration, including planetary protection and resource exploitation.

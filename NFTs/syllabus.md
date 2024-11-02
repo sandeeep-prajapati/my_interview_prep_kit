@@ -1,5 +1,3 @@
-Here are 20 prompts to help you master NFTs (Non-Fungible Tokens) with a focus on Solidity, Hardhat, and Ethers.js:
-
 1. **01_introduction_to_nfts.md**
    - What are NFTs, and how do they differ from traditional cryptocurrencies and fungible tokens?
 
