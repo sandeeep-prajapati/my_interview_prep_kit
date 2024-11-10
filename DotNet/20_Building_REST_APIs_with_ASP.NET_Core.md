@@ -123,6 +123,37 @@ namespace MyApiApp.Controllers
     }
 }
 ```
+for Program.cs
+```
+    var builder = WebApplication.CreateBuilder(args);
+
+    // Add services to the container.
+    builder.Services.AddControllers(); // Adds support for controllers, including API controllers
+
+    // Optional: Adds Swagger for API documentation
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+
+    var app = builder.Build();
+
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
+    app.UseHttpsRedirection();
+
+    app.UseRouting();
+
+    app.UseAuthorization();
+
+    app.MapControllers(); // Enables attribute routing for controllers, like ProductsController
+
+    app.Run();
+
+```
 
 ### Step 4: Routing
 ASP.NET Core uses routing to map HTTP requests to controller actions. In the above controller:
