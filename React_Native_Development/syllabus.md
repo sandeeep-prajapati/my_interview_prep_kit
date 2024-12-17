@@ -118,4 +118,82 @@
     **File:** `30_testing.md`  
     Write unit tests for your React Native components using Jest.
 
----
+31. **Integrate Maps with React Native Maps**  
+    **File:** `31_maps_integration.md`  
+    Add map functionality to your app using React Native Maps and display a marker for a specific location.
+
+32. **Use Animations with React Native Reanimated**  
+    **File:** `32_animations.md`  
+    Create smooth animations for UI transitions using React Native Reanimated.
+
+33. **Implement Pagination in a List**  
+    **File:** `33_pagination.md`  
+    Add pagination to a FlatList to load more data dynamically as the user scrolls.
+
+34. **Set Up Redux for State Management**  
+    **File:** `34_redux_setup.md`  
+    Configure Redux in your app and manage global state efficiently.
+
+35. **Implement Redux Thunk for Async Actions**  
+    **File:** `35_redux_thunk.md`  
+    Use Redux Thunk to handle asynchronous actions in your app.
+
+36. **Integrate Firebase Authentication**  
+    **File:** `36_firebase_auth.md`  
+    Set up Firebase Authentication to allow users to sign up and log in.
+
+37. **Use Firebase Firestore for Data Storage**  
+    **File:** `37_firebase_firestore.md`  
+    Store and retrieve app data using Firebase Firestore.
+
+38. **Create a Custom Drawer Navigation**  
+    **File:** `38_drawer_navigation.md`  
+    Build a custom drawer navigation menu with React Navigation.
+
+39. **Handle Deep Linking**  
+    **File:** `39_deep_linking.md`  
+    Enable deep linking to open specific screens in your app via URLs.
+
+40. **Build an E-commerce Product Page**  
+    **File:** `40_product_page.md`  
+    Design a product display page with an image carousel, price, and description.
+
+41. **Integrate Payment Gateway**  
+    **File:** `41_payment_gateway.md`  
+    Add payment functionality using a service like Stripe or Razorpay.
+
+42. **Create a Chat Interface**  
+    **File:** `42_chat_interface.md`  
+    Build a chat interface with real-time messaging functionality.
+
+43. **Handle File Uploads**  
+    **File:** `43_file_uploads.md`  
+    Allow users to upload files to a server or cloud storage from your app.
+
+44. **Secure Your App with Environment Variables**  
+    **File:** `44_env_variables.md`  
+    Use environment variables to securely manage sensitive keys and configurations.
+
+45. **Integrate Social Media Authentication**  
+    **File:** `45_social_auth.md`  
+    Allow users to log in using their Google, Facebook, or Twitter accounts.
+
+46. **Use React Native Gesture Handler**  
+    **File:** `46_gesture_handler.md`  
+    Implement advanced gestures like swipe, pan, and drag with React Native Gesture Handler.
+
+47. **Monitor Performance with React Native Performance Tools**  
+    **File:** `47_performance_monitoring.md`  
+    Use tools like Flipper to analyze and optimize your app's performance.
+
+48. **Set Up Internationalization (i18n)**  
+    **File:** `48_internationalization.md`  
+    Add support for multiple languages in your app using a library like i18next.
+
+49. **Build an Offline-First App**  
+    **File:** `49_offline_first.md`  
+    Implement offline functionality with local storage and background sync.
+
+50. **Publish Your App to App Stores**  
+    **File:** `50_publish_app.md`  
+    Prepare and publish your app on Google Play Store and Apple App Store.
